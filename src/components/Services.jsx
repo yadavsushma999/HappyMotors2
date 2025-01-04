@@ -1,33 +1,34 @@
 import React from 'react';
 import { useTheme } from '../components/ThemeContext'; // Import the theme context
+import {  maintenance,repairing,detailing,painting,insurance } from '../assets';
 
 const Services = () => {
   const { darkMode, toggleTheme } = useTheme(); // Get darkMode and toggleTheme from the context
 
   const servicesData = [
     {
-      imgSrc: '/HappyMotors2/images/maintenance.jpeg',
+      imgSrc: maintenance,
       title: 'Regular Maintenance',
       description: 'Ensure peak performance with our routine check-ups and maintenance services.',
     },
     {
-      imgSrc: '/HappyMotors2/images/repairing.jpeg',
+      imgSrc: repairing,
       title: 'Emergency Repairing',
       description: 'Back on the road in no time with our efficient and effective repair service.',
     },
     {
-      imgSrc: '/HappyMotors2/images/detailing.jpeg',
+      imgSrc: detailing,
       title: 'Detailing and Cleaning',
       description: 'Experience a ride that looks and feels new with our professional detailing service.',
     },
     {
-      imgSrc: '/HappyMotors2/images/painting.jpeg',
+      imgSrc: painting,
       title: 'Car Painting',
       description:
         'Your trusted local destination for top-notch car painting services. We give your car the fresh and attractive look it deserves.',
     },
     {
-      imgSrc: '/HappyMotors2/images/insurance.jpeg',
+      imgSrc: insurance,
       title: 'Insurance',
       description:
         'Give your car the protection it deserves. Our comprehensive insurance coverage puts you in the driver\'s seat, worry-free.',

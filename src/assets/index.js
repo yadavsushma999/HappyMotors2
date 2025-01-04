@@ -33,7 +33,11 @@ import godigitinsu from './godigitinsu.jpeg';
 import hdfcinsu from './hdfcinsu.jpg';
 import unitedinsu from './unitedinsu.jpeg';
 import zunoinsu from './zunoinsu.jpg';
-
+import maintenance from './maintenance.jpeg';
+import repairing from './repairing.jpeg';
+import detailing from './detailing.jpeg';
+import painting from './painting.jpeg';
+import insurance from './insurance.jpeg';
 export {
   NICL,
   kotak,
@@ -44,6 +48,11 @@ export {
   hdfcinsu,
   unitedinsu,
   zunoinsu,
+  maintenance,
+  repairing,
+  detailing,
+  painting,
+  insurance,
   airbnb,
   bill,
   binance,
