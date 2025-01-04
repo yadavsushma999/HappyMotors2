@@ -25,9 +25,25 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import NICL from "./nicl.jpg";
+import kotak from "./kotak.png";
+import sriraminsu from './sriraminsu.jpg';
+import futureinsu from './futureinsu.jpg';
+import cholainsu from './cholainsu.jpeg';
+import godigitinsu from './godigitinsu.jpeg';
+import hdfcinsu from './hdfcinsu.jpg';
+import unitedinsu from './unitedinsu.jpeg';
+import zunoinsu from './zunoinsu.jpg';
 
 export {
   NICL,
+  kotak,
+  sriraminsu,
+  futureinsu,
+  cholainsu,
+  godigitinsu,
+  hdfcinsu,
+  unitedinsu,
+  zunoinsu,
   airbnb,
   bill,
   binance,

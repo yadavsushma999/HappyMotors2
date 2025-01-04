@@ -1,21 +1,21 @@
 import React from 'react';
 import { useTheme } from '../components/ThemeContext'; // Import the custom hook to use theme
 import Card from './Card'; // Import the reusable Card component
-import { NICL } from '../assets';
+import {  NICL,kotak,sriraminsu,futureinsu,godigitinsu,cholainsu,hdfcinsu,unitedinsu,zunoinsu, } from '../assets';
 
 const Insurance = () => {
   const { darkMode, toggleTheme } = useTheme(); // Access darkMode and toggleTheme from the ThemeContext
 
   const insuranceImages = [
     { src:NICL, alt: 'NICL' },
-    { src: '/HappyMotors2/images/insurance/sriraminsu.jpg', alt: 'Sriram Insurance' },
-    { src: '/HappyMotors2/images/insurance/kotak.png', alt: 'Kotak Insurance' },
-    { src: '/HappyMotors2/images/insurance/futureinsu.jpg', alt: 'Future Insurance' },
-    { src: '/HappyMotors2/images/insurance/hdfcinsu.jpg', alt: 'HDFC Insurance' },
-    { src: '/HappyMotors2/images/insurance/godigitinsu.jpeg', alt: 'GoDigit Insurance' },
-    { src: '/HappyMotors2/images/insurance/unitedinsu.jpeg', alt: 'United Insurance' },
-    { src: '/HappyMotors2/images/insurance/zunoinsu.jpg', alt: 'Zuno Insurance' },
-    { src: '/HappyMotors2/images/insurance/cholainsu.jpeg', alt: 'Chola Insurance' },
+    { src: sriraminsu, alt: 'Sriram Insurance' },
+    { src: kotak, alt: 'Kotak Insurance' },
+    { src: futureinsu, alt: 'Future Insurance' },
+    { src: hdfcinsu, alt: 'HDFC Insurance' },
+    { src: godigitinsu, alt: 'GoDigit Insurance' },
+    { src: unitedinsu, alt: 'United Insurance' },
+    { src: zunoinsu, alt: 'Zuno Insurance' },
+    { src: cholainsu, alt: 'Chola Insurance' },
   ];
 
   return (
