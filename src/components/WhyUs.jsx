@@ -1,12 +1,13 @@
 import React from 'react';
 import { useTheme } from '../components/ThemeContext'; // Import the custom hook to use theme
 import Card from './Card'; // Import the reusable Card component
+import { NICL } from '../assets';
 
 const Insurance = () => {
   const { darkMode, toggleTheme } = useTheme(); // Access darkMode and toggleTheme from the ThemeContext
 
   const insuranceImages = [
-    { src: '/HappyMotors2/images/insurance/nicl.jpg', alt: 'NICL' },
+    { src:NICL, alt: 'NICL' },
     { src: '/HappyMotors2/images/insurance/sriraminsu.jpg', alt: 'Sriram Insurance' },
     { src: '/HappyMotors2/images/insurance/kotak.png', alt: 'Kotak Insurance' },
     { src: '/HappyMotors2/images/insurance/futureinsu.jpg', alt: 'Future Insurance' },
