@@ -1,0 +1,124 @@
+import React from 'react';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { useTheme } from '../components/ThemeContext'; // Import the custom hook
+
+const Footer = () => {
+  const { darkMode, toggleTheme } = useTheme(); // Use darkMode from the ThemeContext
+
+  return (
+    <footer
+      className={`py-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}
+    >
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Title and Theme Toggle */}
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-3xl font-semibold">AutoGarage</h1>
+          <button
+            onClick={toggleTheme}
+            className={`py-2 px-4 rounded ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
+          >
+            {darkMode ? 'Light Mode' : 'Dark Mode'}
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+          {/* Column 1: About AutoGarage */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">AutoGarage</h3>
+            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+              We are your trusted partner for all car repair and maintenance services. Our certified
+              mechanics are here to ensure your vehicle runs smoothly.
+            </p>
+            <div className="flex space-x-6">
+              <a href="https://www.facebook.com/" className="text-blue-600 hover:text-blue-500">
+                <FaFacebook size={20} />
+              </a>
+              <a href="https://www.instagram.com/" className="text-pink-600 hover:text-pink-500">
+                <FaInstagram size={20} />
+              </a>
+              <a href="https://www.twitter.com/" className="text-blue-400 hover:text-blue-300">
+                <FaTwitter size={20} />
+              </a>
+              <a href="https://www.linkedin.com/" className="text-blue-700 hover:text-blue-600">
+                <FaLinkedin size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Column 2: Services */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Our Services</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Engine Repair
+                </a>
+              </li>
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Oil Change
+                </a>
+              </li>
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Brake Services
+                </a>
+              </li>
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Tire Replacement
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Quick Links */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: Location & Contact */}
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold">Find Us</h3>
+            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+              123 AutoGarage St, City, Country
+            </p>
+            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>+1 (123) 456-7890</p>
+            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>info@autogarage.com</p>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className={`border-t mt-8 pt-4 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+          <p className={`text-center text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+            &copy; 2025 AutoGarage. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
