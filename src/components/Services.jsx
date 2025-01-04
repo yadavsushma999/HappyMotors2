@@ -6,7 +6,7 @@ const Services = () => {
 
   const servicesData = [
     {
-      imgSrc: './images/maintenance.jpeg',
+      imgSrc: '/HappyMotors2/images/maintenance.jpeg',
       title: 'Regular Maintenance',
       description: 'Ensure peak performance with our routine check-ups and maintenance services.',
     },
