@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { useTheme } from '../components/ThemeContext'; // Import the custom hook
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { darkMode, toggleTheme } = useTheme(); // Use darkMode from the ThemeContext
@@ -76,20 +77,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Quick Links</h3>
             <ul className="space-y-2">
+            <Link to="/contact" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+        Contact Us
+      </Link>
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Contact Us
-                </a>
+              <Link to="/faq" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+       FAQ
+      </Link>
               </li>
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Privacy Policy
-                </a>
+              <Link to="/privacy" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+       Privacy Policy
+      </Link>
               </li>
               <li>
                 <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>

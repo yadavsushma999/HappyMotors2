@@ -25,6 +25,8 @@
   
 }
 
+
+
 * {
   scroll-behavior: smooth;
 }
@@ -39,6 +41,8 @@
     #5ce1e6 71.54%,
     #33bbcf 100%
   );
+
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -161,4 +165,17 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+/* In your style.css file */
+.container .tab input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8em;
+  justify-content: flex-end;
+  padding: 20px;
 }

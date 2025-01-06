@@ -51,7 +51,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <section
+    <section id="contactus"
       className={`contactus py-12 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-r from-[#fceab9] via-white to-white text-gray-800'}`}
     >
       <div className="max-w-screen-lg mx-auto">

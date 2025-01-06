@@ -36,7 +36,7 @@ const Services = () => {
   ];
 
   return (
-    <section
+    <section id = "servicesHome"
       className={`services p-8 transition-all duration-300 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}
     >
       <div className="text-center mb-8">
