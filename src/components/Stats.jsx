@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useTheme } from '../components/ThemeContext'; // Import the theme context
 import { stats } from '../constants';
 import styles from '../style';
 
 const Stats = () => {
   return (
     <div>
-      <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
+      <section className={`${styles.flexCenter} flex-row flex-wrap sm:p-10 mb-6`}>
         {stats.map((stat) => (
           <StatCard key={stat.id} value={stat.value} title={stat.title} />
         ))}
@@ -15,10 +16,10 @@ const Stats = () => {
 };
 
 const StatCard = ({ value, title }) => {
+  const { darkMode } = useTheme(); // Get darkMode value from context
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-    let increment = 1;
     const target = value;
     const duration = 2000; // Duration in ms for the counting to complete
     const stepTime = Math.abs(Math.floor(duration / target));
@@ -26,7 +27,7 @@ const StatCard = ({ value, title }) => {
     const interval = setInterval(() => {
       setCount((prevCount) => {
         if (prevCount < target) {
-          return prevCount + increment;
+          return prevCount + 1;
         } else {
           clearInterval(interval);
           return target;
@@ -44,8 +45,9 @@ const StatCard = ({ value, title }) => {
         leading-[45px] text-white'>
         {count}+
       </h4>
-      <p className='font-poppins font-normal xs:text-[20px] text-[15px] xs:leading-[23px] 
-        leading-[21px] text-gradient uppercase ml-3'>
+      <p
+        className={`font-poppins font-normal xs:text-[20px] text-[15px] xs:leading-[23px] 
+        leading-[21px] ${darkMode ? 'text-gradient' : 'light-gradient'} uppercase ml-3`}>
         {title}
       </p>
     </div>

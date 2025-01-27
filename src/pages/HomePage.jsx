@@ -1,6 +1,6 @@
 // src/pages/HomePage.jsx
 import React from 'react';
-import { Services, Testinomial, ContactForm, Navbar, WhyUs, Hero, Stats, Business, Footer} from '../components';
+import { Services, Testinomial, ContactForm, Navbar, WhyUs, Hero, Stats, Business, Footer,EmergencyCallSection} from '../components';
 import styles from '../style';
 
 const HomePage = () => {
@@ -28,6 +28,7 @@ const HomePage = () => {
           <Business />
           <WhyUs />
           <Testinomial/>
+          <EmergencyCallSection/>
           <ContactForm />
           <Footer />
         </div>

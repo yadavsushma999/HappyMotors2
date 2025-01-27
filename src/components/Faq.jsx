@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTheme } from '../components/ThemeContext'; // Import the theme context
 
-const Accordion = () => {
+const FAQ = () => {
   const [activeTab, setActiveTab] = useState(null);
   const { darkMode } = useTheme(); // Access the darkMode state from the context
 
@@ -226,4 +226,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default FAQ;

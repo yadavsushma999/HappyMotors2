@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12">
         {/* Title and Theme Toggle */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-semibold">AutoGarage</h1>
+          <h1 className="text-3xl font-semibold">Happy Motors</h1>
           <button
             onClick={toggleTheme}
             className={`py-2 px-4 rounded ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
           {/* Column 1: About AutoGarage */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">AutoGarage</h3>
+            <h3 className="text-xl font-semibold">Happy Motors</h3>
             <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
               We are your trusted partner for all car repair and maintenance services. Our certified
               mechanics are here to ensure your vehicle runs smoothly.
@@ -51,24 +51,24 @@ const Footer = () => {
             <h3 className="text-xl font-semibold">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Engine Repair
-                </a>
+              <Link to="/engine-diagnostics" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+        Engine Repair
+      </Link>
               </li>
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Oil Change
-                </a>
+              <Link to="/oil-change" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+          Oil Change
+      </Link>
               </li>
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Brake Services
-                </a>
+              <Link to="/brake-service" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+        Brake Service
+      </Link>
               </li>
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Tire Replacement
-                </a>
+              <Link to="/tire-service" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+        Tire Replacement
+      </Link>
               </li>
             </ul>
           </div>
@@ -91,9 +91,9 @@ const Footer = () => {
       </Link>
               </li>
               <li>
-                <a href="#!" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
-                  Terms of Service
-                </a>
+              <Link to="/terms" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} hover:text-blue-500`}>
+      Terms Of Service
+      </Link>
               </li>
             </ul>
           </div>
@@ -102,10 +102,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Find Us</h3>
             <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              123 AutoGarage St, City, Country
+            B/H M Cube- 2nd , National Highway No. 48, Salvav, Vapi - 396191
             </p>
-            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>+1 (123) 456-7890</p>
-            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>info@autogarage.com</p>
+            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>(91) 7779026788</p>
+            <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            happymotorsvapi@gmail.com</p>
           </div>
         </div>
 

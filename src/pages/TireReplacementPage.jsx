@@ -1,9 +1,9 @@
 // src/pages/ContactPage.jsx
 import React from 'react';
-import {  ContactForm, Navbar, Footer} from '../components';
+import {  TireReplacement, Navbar, Footer, } from '../components';
 import styles from '../style';
 
-const ContactPage = () => {
+const TireReplacementPage = () => {
     return (
         <div className="bg-primary w-full overflow-hidden">
           {/* Header and Navbar */}
@@ -14,10 +14,10 @@ const ContactPage = () => {
           </div>
     
           {/* Main Content */}
-          <div className={` ${styles.paddingX} ${styles.flexStart}`}>
-            <div className={`${styles.boxWidth} ` }>
+          <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
               
-              <ContactForm />
+              <TireReplacement />
               <Footer />
             </div>
           </div>
@@ -25,4 +25,4 @@ const ContactPage = () => {
       );
 };
 
-export default ContactPage;
+export default TireReplacementPage;

@@ -4,7 +4,7 @@ import {  Faq, Navbar, Footer} from '../components';
 import styles from '../style';
 import PrivacyPolicy from '../components/Privacypolicy';
 
-const FaqPage = () => {
+const PrivacyPage = () => {
     return (
         <div className="bg-primary w-full overflow-hidden">
           {/* Header and Navbar */}
@@ -26,4 +26,4 @@ const FaqPage = () => {
       );
 };
 
-export default FaqPage;
+export default PrivacyPage;

@@ -52,19 +52,20 @@ const ContactUs = () => {
 
   return (
     <section id="contactus"
-      className={`contactus py-12 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-r from-[#fceab9] via-white to-white text-gray-800'}`}
+      className={`contactus  py-12 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-r from-[#fceab9] via-white to-white text-gray-800'}`}
     >
       <div className="max-w-screen-lg mx-auto">
         {/* Title */}
-        <div className="title mb-8 flex justify-between items-center">
-          <h1 className="text-3xl font-semibold">Get In Touch</h1>
-          <button
-            onClick={toggleTheme}  // Use toggleTheme from the ThemeContext
-            className={`py-2 px-4 rounded ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
-          >
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
-          </button>
-        </div>
+        <div className="title mb-8 flex justify-center items-center space-x-4 mt-11">  {/* Add space between the elements */}
+  <h1 className="text-3xl font-semibold">Get In Touch</h1>
+  <button
+    onClick={toggleTheme}  // Use toggleTheme from the ThemeContext
+    className={`py-2 px-4 rounded ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
+  >
+    {darkMode ? 'Light Mode' : 'Dark Mode'}
+  </button>
+</div>
+
 
         {/* Flex Container for Form and Info */}
         <div className="flex flex-wrap lg:flex-nowrap gap-8">
@@ -179,7 +180,7 @@ const ContactUs = () => {
         </div>
 
         {/* Map */}
-        <div className="map mt-12">
+        <div className="map mt-12 text-center">
           <h3 className="text-2xl font-semibold mb-6">Our Location</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.47248825411!2d72.91205237478015!3d20.404628708923305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cf8179171dcd%3A0x1626aea55dac2b30!2sHappy%20motors!5e0!3m2!1sen!2sin!4v1694779837878!5m2!1sen!2sin"

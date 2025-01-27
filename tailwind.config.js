@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
-  darkMode: 'class',
+  //darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -14,6 +14,16 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      animation: {
+        'fade-in': 'fade-in 0.5s ease-in-out',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+  
     },
     screens: {
       xs: "480px",
@@ -24,6 +34,7 @@ module.exports = {
       xl: "1700px",
     },
   },
+  
   plugins: [],
 };
 

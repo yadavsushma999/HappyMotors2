@@ -49,6 +49,22 @@
   /*text-fill-color: transparent;*/
 }
 
+.light-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #2c3e50 0.89%,   /* Darker blue-grey */
+    #34495e 17.23%,   /* Darker grey-blue */
+    #8e44ad 70.04%,   /* Medium purple */
+    #f39c12 55.12%,   /* Bright yellow */
+    #f1c40f 71.54%,   /* Lighter yellow */
+    #e74c3c 100%      /* Strong red */
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,

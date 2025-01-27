@@ -4,7 +4,7 @@ import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.jpeg";
+import logo from "./logo.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import carvideo from "./carvideo.mp4";
@@ -38,6 +38,13 @@ import repairing from './repairing.jpeg';
 import detailing from './detailing.jpeg';
 import painting from './painting.jpeg';
 import insurance from './insurance.jpeg';
+import enginerepair from './engine-repair.jpeg';
+import oilrepair from './oil-repair.jpeg';
+import brakerepair from './brake-repair.jpeg';
+import tirereplacement from './tire-replacement.jpeg';
+import lightBackground from './lightBackground.jpg';
+import car from './car.png';
+import calendar from './calendar.png';
 export {
   NICL,
   kotak,
@@ -79,4 +86,12 @@ export {
   people01,
   people02,
   people03,
+  enginerepair,
+  oilrepair,
+  brakerepair,
+  tirereplacement,
+  lightBackground,
+  car,
+  calendar,
+
 };
