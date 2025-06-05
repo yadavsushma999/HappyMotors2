@@ -83,7 +83,7 @@ const AllServices = () => {
                 {/* Render the expanded card at the top if any */}
                 {expanded && (
                     <div
-                        className="group cursor-pointer flex flex-col items-center justify-center gap-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full"
+                        className=" cursor-pointer flex flex-col items-center justify-center gap-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full"
                     >
                         <img
                             src={expanded.image}
@@ -106,7 +106,7 @@ const AllServices = () => {
                     {collapsed.map((service) => (
                         <div
                             key={service.id}
-                            className="group cursor-pointer flex flex-col items-center justify-center gap-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                            className=" cursor-pointer flex flex-col items-center justify-center gap-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                         >
                             <img
                                 src={service.image}

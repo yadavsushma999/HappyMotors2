@@ -1,6 +1,6 @@
 // src/pages/ContactPage.jsx
 import React from 'react';
-import {  EngineDiagnostics, Navbar, Footer} from '../components';
+import {EngineDiagnostics, Navbar, Footer} from '../components';
 import styles from '../style';
 
 const EnginePage = () => {

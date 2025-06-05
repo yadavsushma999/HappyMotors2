@@ -45,16 +45,19 @@ const Navbar = () => {
       }}
     >
       {/* Logo Section */}
-      <Link to="/" className="w-[124px] h-[32px] flex items-center mt-2">
-        <img
-          src={logo}
-          alt="Happy Motors"
-          className="w-[144px] h-[80px] mx-8"
-          style={{
-            filter: darkMode ? 'brightness(0) invert(1)' : 'none', // Adjust logo for dark mode
-          }}
-        />
-      </Link>
+      <div className="flex-1 flex sm:justify-start justify-start">
+  <Link to="/" className="w-[124px] h-[32px] flex items-center sm:ml-8 ml-0">
+    <img
+      src={logo}
+      alt="Happy Motors"
+      className="w-[144px] h-[80px]"
+      style={{
+        filter: darkMode ? 'brightness(0) invert(1)' : 'none', // Adjust logo for dark mode
+      }}
+    />
+  </Link>
+</div>
+
 
       {/* Desktop Navigation Links */}
       <ul className="list-none sm:flex hidden justify-center items-center flex-1">

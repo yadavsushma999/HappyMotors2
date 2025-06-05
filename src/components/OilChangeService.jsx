@@ -45,7 +45,8 @@ const OilChangeServices = () => {
 
   return (
     <div className={`flex justify-center items-center min-h-screen py-11 ${darkMode ? '' : 'bg-[#F5F8FF]'}`}>
-      <div className="mx-10 max-w-6xl flex flex-col gap-10">
+    <div className="w-full sm:max-w-6xl flex flex-col gap-10 sm:px-10">
+  
         {/* Heading Section */}
         <div className="text-center mt-10 pt-10 mb-8">
           <h1 className={`text-3xl font-semibold ${darkMode ? 'text-white' : 'text-[#333]'}`}>
