@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { close, logo, menu } from '../assets';
+import { useState, useEffect } from 'react';
+import {  logo,} from '../assets';
 import { navLinks } from '../constants';
 import { FaSun, FaMoon, FaFacebook, FaInstagram, FaYoutube, FaWhatsapp,FaTimes,FaBars } from 'react-icons/fa';
 import { useTheme } from '../components/ThemeContext';

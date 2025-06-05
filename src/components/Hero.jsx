@@ -1,8 +1,7 @@
-import React from 'react';
+
 import { useTheme } from '../components/ThemeContext'; // Import the theme context
 import styles from '../style';
-import { discount, robot, carvideo,car, calendar,lightBackground } from '../assets'; // Assuming you have a light background image
-import GetStarted from './GetStarted';
+import { car, calendar,lightBackground } from '../assets'; // Assuming you have a light background image
 
 const Hero = () => {
   const { darkMode } = useTheme(); // Get the darkMode value from context
