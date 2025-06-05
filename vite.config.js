@@ -1,8 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/HappyMotors2/',
   plugins: [react()],
-  base: '/HappyMotors2/', // Replace with your repository name
 });
+
 
