@@ -1,9 +1,9 @@
-import React from 'react';
+
 import Slider from 'react-slick';
 import { useTheme } from '../components/ThemeContext'; // Import the custom hook to use theme
 
 const TestimonialSlider = () => {
-  const { darkMode, toggleTheme } = useTheme(); // Access darkMode and toggleTheme from the ThemeContext
+  const { darkMode } = useTheme(); // Access darkMode and toggleTheme from the ThemeContext
 
   const testimonials = [
     {
@@ -37,7 +37,7 @@ const TestimonialSlider = () => {
   return (
     <div className={`w-full mt-2 mb-2 mx-auto py-8 ${darkMode ? '' : 'bg-gray-100'}`}>
       {/* Button to toggle dark mode */}
-     
+
 
       <h2 className={`text-3xl font-semibold text-center mb-6 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
         What Our Clients Say

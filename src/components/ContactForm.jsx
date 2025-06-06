@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import { useState } from 'react';
 import { facebook, instagram, linkedin, twitter } from '../assets';
 import { useTheme } from '../components/ThemeContext';  // Import the custom hook to use theme
 import emailjs from 'emailjs-com';
@@ -8,7 +9,7 @@ const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const userId = import.meta.env.VITE_EMAILJS_USER_ID;
 
 const ContactUs = () => {
-  const { darkMode, toggleTheme } = useTheme(); 
+  const { darkMode } = useTheme(); 
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -95,9 +96,6 @@ const ContactUs = () => {
       <div className="max-w-screen-lg mx-auto">
         <div className="title mb-8 flex justify-center items-center space-x-4 mt-11">
           <h1 className="text-3xl font-semibold">Get In Touch</h1>
-          <button onClick={toggleTheme} className={`py-2 px-4 rounded ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'}`}>
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
-          </button>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -234,7 +232,7 @@ const ContactUs = () => {
             width="100%"
             height="450"
             style={{ border: '0' }}
-            allowFullScreen="true"
+            allowFullScreen={true}
             loading="lazy"
           ></iframe>
         </div>

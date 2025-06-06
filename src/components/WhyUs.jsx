@@ -45,17 +45,7 @@ const Insurance = () => {
         ))}
       </div>
 
-      {/* Button to toggle dark mode */}
-      <button
-        onClick={toggleTheme} // Use toggleTheme from the ThemeContext
-        className={`py-2 px-4 rounded-md mt-5 mx-auto block ${
-          darkMode
-            ? 'bg-blue-500 hover:bg-blue-600 text-white'
-            : 'bg-blue-600 hover:bg-blue-700 text-white'
-        }`}
-      >
-        Toggle Dark Mode
-      </button>
+      
     </section>
   );
 };

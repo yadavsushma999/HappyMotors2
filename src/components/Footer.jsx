@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { useTheme } from '../components/ThemeContext'; // Import the custom hook
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const { darkMode, toggleTheme } = useTheme(); // Use darkMode from the ThemeContext
+  const { darkMode } = useTheme(); // Use darkMode from the ThemeContext
 
   return (
     <footer
@@ -14,12 +14,6 @@ const Footer = () => {
         {/* Title and Theme Toggle */}
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-semibold">Happy Motors</h1>
-          <button
-            onClick={toggleTheme}
-            className={`py-2 px-4 rounded ${darkMode ? 'bg-gray-700 text-white hover:bg-gray-600' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
-          >
-            {darkMode ? 'Light Mode' : 'Dark Mode'}
-          </button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
