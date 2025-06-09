@@ -12,7 +12,7 @@ const FeatureCard = ({ icon, title, content, index }) => {
         }`}
     >
       <div
-        className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} ${darkMode ? 'bg-dimBlue' : 'bg-lightBlue'
+        className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} ${darkMode ? 'bg-dimBlue' : 'bg-gray-900'
           }`}
       >
         <img src={icon} alt="icon" className="w-[50%] h-[50%] object-contain" />

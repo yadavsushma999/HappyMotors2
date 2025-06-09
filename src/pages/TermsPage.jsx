@@ -1,12 +1,14 @@
-// src/pages/ContactPage.jsx
-import React from 'react';
-import {  Faq, Navbar, Footer} from '../components';
+
+import {  Navbar, Footer} from '../components';
 import styles from '../style';
 import TermsOfService from '../components/TermsOfService';
+import { useTheme } from '../components/ThemeContext';
 
 const TermsPage = () => {
+  const { darkMode } = useTheme();
     return (
-        <div className="bg-primary w-full overflow-hidden">
+      
+        <div className={`${darkMode ? 'bg-primary' : 'bg-white'} w-full overflow-hidden`}>
           {/* Header and Navbar */}
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
@@ -15,7 +17,7 @@ const TermsPage = () => {
           </div>
     
           {/* Main Content */}
-          <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${darkMode ? 'bg-primary' : 'bg-white'} ${styles.paddingX} ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               
               <TermsOfService />

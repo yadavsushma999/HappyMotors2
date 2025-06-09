@@ -92,7 +92,9 @@ const ContactUs = () => {
   ];
 
   return (
-    <section id="contactus" className={`contactus py-12 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-r from-[#fceab9] via-white to-white text-gray-800'}`}>
+    <section id="contactus" className={`contactus py-12 ${darkMode ? 'bg-gray-900 text-white' : 
+    'bg-[#f0f4f9]'
+}`}>
       <div className="max-w-screen-lg mx-auto">
         <div className="title mb-8 flex justify-center items-center space-x-4 mt-11">
           <h1 className="text-3xl font-semibold">Get In Touch</h1>

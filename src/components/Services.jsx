@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTheme } from '../components/ThemeContext'; 
+
+import { useTheme } from '../components/ThemeContext';
 import { maintenance, repairing, detailing, painting, insurance } from '../assets';
 import Button from './Button';  // Import Button component
 import { useNavigate } from 'react-router-dom';  // Import useNavigate from react-router-dom
@@ -42,7 +42,15 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicesHome" className={`services p-8 transition-all duration-300 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+    <section
+      id="servicesHome"
+      className={`services p-8 transition-all duration-300 mb-6
+    ${darkMode
+          ? 'bg-gray-900 text-white border-none'
+          : 'bg-white text-black border border-gray-300'}`
+      }
+    >
+
       <div className="text-center mb-8">
         <h1 className={`text-4xl font-bold transition ${darkMode ? 'text-white' : 'text-gray-800'}`}>Our Services</h1>
         <p className={`mt-3 text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>

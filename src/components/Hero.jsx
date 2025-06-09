@@ -1,7 +1,7 @@
 
 import { useTheme } from '../components/ThemeContext'; // Import the theme context
 import styles from '../style';
-import { car, calendar,lightBackground } from '../assets'; // Assuming you have a light background image
+import { car, calendar, lightBackground } from '../assets'; // Assuming you have a light background image
 
 const Hero = () => {
   const { darkMode } = useTheme(); // Get the darkMode value from context
@@ -40,40 +40,40 @@ const Hero = () => {
         </p>
 
         <div
-  className={`flex flex-row items-center justify-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 mt-2`}
->
-  <button
-    className="flex items-center"
-    onClick={() => alert("This feature is currently unavailable")}
-  >
-    <img src={calendar} alt="calendar" className="w-[32px] h-[32px] mr-2" />
-    <p className={`${styles.paragraph} text-white`}>
-      <span className="text-white">BOOK</span> AN{' '}
-      <span className="text-white">APPOINTMENT</span>
-    </p>
-  </button>
-</div>
+          className={`flex flex-row items-center justify-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 mt-2`}
+        >
+          <button
+            className="flex items-center"
+            onClick={() => window.open("https://calendar.app.google/PcAWDUwbfphUFF299", "_blank")}
+          >
+            <img src={calendar} alt="calendar" className="w-[32px] h-[32px] mr-2" />
+            <p className={`${styles.paragraph} text-white`}>
+              <span className="text-white">BOOK</span> AN{' '}
+              <span className="text-white">APPOINTMENT</span>
+            </p>
+          </button>
+        </div>
 
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative flex-col`}>
-  
-  {/* Image container */}
-  <div className="w-full lg:w-full h-full flex items-end relative z-[5] rounded-lg overflow-hidden">
-  
-    {/* Image */}
-    <img
-      src={car} // Use the imported image
-      className="w-full h-full object-contain brightness-[1.2] mb-0 transform transition-transform duration-1000 ease-in-out hover:translate-x-10"
-      alt="Car" // Always good practice to add an alt attribute for accessibility
-    />
-  </div>
 
-  {/* Gradients */}
-  <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-  <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" />
-  <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-</div>
+        {/* Image container */}
+        <div className="w-full lg:w-full h-full flex items-end relative z-[5] rounded-lg overflow-hidden">
+
+          {/* Image */}
+          <img
+            src={car} // Use the imported image
+            className="w-full h-full object-contain brightness-[1.2] mb-0 transform transition-transform duration-1000 ease-in-out hover:translate-x-10"
+            alt="Car" // Always good practice to add an alt attribute for accessibility
+          />
+        </div>
+
+        {/* Gradients */}
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+      </div>
 
 
       {/* 

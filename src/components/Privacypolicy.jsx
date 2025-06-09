@@ -1,5 +1,4 @@
-// src/pages/PrivacyPolicyPage.jsx
-import React from 'react';
+
 import { useTheme } from '../components/ThemeContext'; // Import the theme context to check dark mode
 import styles from '../style'; // Import any global styles
 
@@ -13,7 +12,7 @@ const PrivacyPolicy = () => {
       } ${styles.paddingY} p-6`}
     >
       <div className="container mx-auto max-w-4xl">
-        <h1 className="text-3xl font-bold mb-4 text-center">Privacy Policy</h1>
+        <h1 className="text-3xl font-bold mb-4 text-center mt-8">Privacy Policy</h1>
 
         <p className="mb-4 text-center">
           <strong>Effective Date:</strong> January 5, 2025

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import {  logo,} from '../assets';
+import { logo, } from '../assets';
 import { navLinks } from '../constants';
-import { FaSun, FaMoon, FaFacebook, FaInstagram, FaYoutube, FaWhatsapp,FaTimes,FaBars } from 'react-icons/fa';
+import { FaSun, FaMoon, FaFacebook, FaInstagram, FaYoutube, FaWhatsapp, FaTimes, FaBars } from 'react-icons/fa';
 import { useTheme } from '../components/ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -46,46 +46,44 @@ const Navbar = () => {
     >
       {/* Logo Section */}
       <div className="flex-1 flex sm:justify-start justify-start">
-  <Link to="/" className="w-[124px] h-[32px] flex items-center sm:ml-8 ml-0">
-    <img
-      src={logo}
-      alt="Happy Motors"
-      className="w-[144px] h-[80px]"
-      style={{
-        filter: darkMode ? 'brightness(0) invert(1)' : 'none', // Adjust logo for dark mode
-      }}
-    />
-  </Link>
-</div>
+        <Link to="/" className="w-[124px] h-[32px] flex items-center sm:ml-8 ml-0">
+          <img
+            src={logo}
+            alt="Happy Motors"
+            className="w-[144px] h-[80px]"
+            style={{
+              filter: darkMode ? 'brightness(0) invert(1)' : 'none', // Adjust logo for dark mode
+            }}
+          />
+        </Link>
+      </div>
 
 
       {/* Desktop Navigation Links */}
       <ul className="list-none sm:flex hidden justify-center items-center flex-1">
-  {navLinks.map((nav, index) => (
-    <li
-      key={nav.id}
-      className={`font-poppins font-normal cursor-pointer px-4 text-[16px] ${
-        index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-      } ${
-        location.pathname === `/${nav.id}` || (nav.id === 'home' && location.pathname === '/')
-          ? 'text-blue-600' // Blue color for active nav item
-          : darkMode
-          ? 'text-gray-300 hover:text-blue-400'
-          : 'text-gray-800 hover:text-blue-600'
-      } transition-colors duration-300`}
-    >
-      {nav.id === 'servicesHome' ? (
-        <Link to="/all-services">{nav.title}</Link>
-      ) : nav.id === 'contactus' ? (
-        <Link to="/contact">{nav.title}</Link>
-      ) : location.pathname === '/' && nav.id !== 'home' ? (
-        <a href={`#${nav.id}`}>{nav.title}</a>
-      ) : (
-        <Link to={`/${nav.id}`}>{nav.title}</Link>
-      )}
-    </li>
-  ))}
-</ul>
+        {navLinks.map((nav, index) => (
+          <li
+            key={nav.id}
+            className={`font-poppins font-normal cursor-pointer px-4 text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+              } ${location.pathname === `/${nav.id}` || (nav.id === 'home' && location.pathname === '/')
+                ? 'text-blue-600' // Blue color for active nav item
+                : darkMode
+                  ? 'text-gray-300 hover:text-blue-400'
+                  : 'text-gray-800 hover:text-blue-600'
+              } transition-colors duration-300`}
+          >
+            {nav.id === 'servicesHome' ? (
+              <Link to="/all-services">{nav.title}</Link>
+            ) : nav.id === 'contactus' ? (
+              <Link to="/contact">{nav.title}</Link>
+            ) : location.pathname === '/' && nav.id !== 'home' ? (
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            ) : (
+              <Link to={`/${nav.id}`}>{nav.title}</Link>
+            )}
+          </li>
+        ))}
+      </ul>
 
 
       {/* Right Section: Social Media Icons, Theme Toggle, and Hamburger Menu */}
@@ -121,33 +119,33 @@ const Navbar = () => {
             size={16}
           />
           <div
-            className={`w-6 h-6 rounded-full bg-white transform ${darkMode ? 'translate-x-10' : 'translate-x-0'} transition-transform`}
+            className={`w-6 h-6 rounded-full bg-white transform ${darkMode ? 'translate-x-12' : 'translate-x-0'} transition-transform`}
           ></div>
         </button>
 
         {/* Hamburger Menu Icon */}
-       
 
-<div
-  className="sm:hidden ml-6 cursor-pointer"
-  onClick={() => setToggle((prev) => !prev)}
->
-  {toggle ? (
-    <FaTimes
-      size={28}
-      style={{
-        color: darkMode ? 'white' : 'black', // White in dark mode, black in light mode
-      }}
-    />
-  ) : (
-    <FaBars
-      size={28}
-      style={{
-        color: darkMode ? 'white' : 'black', // White in dark mode, black in light mode
-      }}
-    />
-  )}
-</div>
+
+        <div
+          className="sm:hidden ml-6 cursor-pointer"
+          onClick={() => setToggle((prev) => !prev)}
+        >
+          {toggle ? (
+            <FaTimes
+              size={28}
+              style={{
+                color: darkMode ? 'white' : 'black', // White in dark mode, black in light mode
+              }}
+            />
+          ) : (
+            <FaBars
+              size={28}
+              style={{
+                color: darkMode ? 'white' : 'black', // White in dark mode, black in light mode
+              }}
+            />
+          )}
+        </div>
 
       </div>
 

@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
-  //darkMode: 'class',
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -13,14 +13,20 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+         bebas: ['Bebas Neue', 'cursive'],
       },
       animation: {
         'fade-in': 'fade-in 0.5s ease-in-out',
+        fadeInUp: 'fadeInUp 0.8s ease-out forwards',
       },
       keyframes: {
         'fade-in': {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
   

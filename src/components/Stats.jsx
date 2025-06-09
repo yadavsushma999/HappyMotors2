@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTheme } from '../components/ThemeContext'; // Import the theme context
 import { stats } from '../constants';
 import styles from '../style';
@@ -41,10 +41,11 @@ const StatCard = ({ value, title }) => {
   return (
     <div className={`flex-1 flex justify-center items-center flex-row m-3`}>
       <h4
-        className='font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] 
-        leading-[45px] text-white'>
+        className={`font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] 
+  leading-[45px] ${darkMode ? 'text-white' : 'text-gray-900'}`}>
         {count}+
       </h4>
+
       <p
         className={`font-poppins font-normal xs:text-[20px] text-[15px] xs:leading-[23px] 
         leading-[21px] ${darkMode ? 'text-gradient' : 'light-gradient'} uppercase ml-3`}>

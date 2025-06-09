@@ -1,11 +1,13 @@
-// src/pages/HomePage.jsx
-import React from 'react';
-import { Services, Testinomial, ContactForm, Navbar, WhyUs, Hero, Stats, Business, Footer,EmergencyCallSection} from '../components';
+import { Services, Testinomial, ContactForm, Navbar, WhyUs, Hero, Stats, Business, Footer, EmergencyCallSection } from '../components';
 import styles from '../style';
+import ScrollReveal from '../components/ScrollReveal';
+import { useTheme } from '../components/ThemeContext';
+
 
 const HomePage = () => {
+  const { darkMode } = useTheme();
   return (
-    <div className="bg-primary w-full overflow-hidden">
+    <div className={`${darkMode ? 'bg-primary' : 'bg-white'} w-full overflow-hidden scroll-smooth`}>
       {/* Header and Navbar */}
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -14,21 +16,21 @@ const HomePage = () => {
       </div>
 
       {/* Hero Section */}
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`${darkMode ? 'bg-primary' : 'bg-white'} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+          <ScrollReveal delay={0.2}><Hero /></ScrollReveal>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      {/* Main Content with animations */}
+      <div className={`${darkMode ? 'bg-primary' : 'bg-white'} ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats />
+          <EmergencyCallSection />
           <Services />
           <Business />
           <WhyUs />
-          <Testinomial/>
-          <EmergencyCallSection/>
+          <Testinomial />
           <ContactForm />
           <Footer />
         </div>

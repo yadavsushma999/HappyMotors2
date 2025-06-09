@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { useTheme } from '../components/ThemeContext'; // Import the custom hook to use theme
 import Card from './Card'; // Import the reusable Card component
 import {  NICL,kotak,sriraminsu,futureinsu,godigitinsu,cholainsu,hdfcinsu,unitedinsu,zunoinsu, } from '../assets';
 
 const Insurance = () => {
-  const { darkMode, toggleTheme } = useTheme(); // Access darkMode and toggleTheme from the ThemeContext
+  const { darkMode } = useTheme(); // Access darkMode and toggleTheme from the ThemeContext
 
   const insuranceImages = [
     { src:NICL, alt: 'NICL' },
@@ -20,7 +20,7 @@ const Insurance = () => {
 
   return (
     <section
-      className={`insurance mt-5 ${darkMode ? 'bg-[#333]' : 'bg-[#fceab9]'} pb-12 flex flex-col items-center`}
+      className={`insurance mt-5 ${darkMode ? 'bg-[#333]' : 'bg-white'} pb-12 flex flex-col items-center`}
     >
       <div className="space"></div>
 

@@ -1,5 +1,4 @@
-// src/pages/TermsOfServicePage.jsx
-import React from 'react';
+
 import { useTheme } from '../components/ThemeContext'; // Import the theme context to check dark mode
 import styles from '../style'; // Import global styles
 
@@ -15,7 +14,7 @@ const TermsOfService = () => {
       <div className="container mx-auto max-w-5xl px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold mb-4">Terms of Service</h1>
+          <h1 className="text-4xl font-extrabold mb-4 mt-8">Terms of Service</h1>
           <p className="text-lg text-white dark:text-gray-400">
             Effective Date: January 5, 2025
           </p>

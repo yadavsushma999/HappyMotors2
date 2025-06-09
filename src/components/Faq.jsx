@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTheme } from '../components/ThemeContext'; // Import the theme context
 
 const FAQ = () => {
@@ -81,18 +81,18 @@ const FAQ = () => {
 
   return (
     <div
-      className={`flex justify-center items-center min-h-screen py-11 ${darkMode ? '' : 'bg-[#F5F8FF]'}`}
+      className={`flex justify-center items-center min-h-screen ${darkMode ? '' : 'bg-[#F5F8FF]'}`}
     >
       <div className="mx-10 max-w-6xl flex flex-col gap-10">
         <h1
-          className={`text-3xl font-bold text-center mt-2 mb-8 ${
+          className={`text-3xl font-bold text-center mt-24 mb-4 ${
             darkMode ? 'text-white' : 'text-[#333]'
           }`}
         >
           Frequently Asked Questions
         </h1>
 
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col md:flex-row gap-10 mb-10">
           {/* Left Column */}
           <div className="flex flex-col gap-5 w-full">
             {questionsAndAnswers.slice(0, 8).map((item, index) => (
