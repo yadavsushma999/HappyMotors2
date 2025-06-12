@@ -39,20 +39,21 @@ const Hero = () => {
           Dependable, Trustworthy Garage Services Just A Click Away
         </p>
 
-        <div
-          className={`flex flex-row items-center justify-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 mt-2`}
+        <btn
+          className={`flex flex-row items-center justify-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 mt-2 cursor-pointer`}
+          onClick={() => window.open("https://calendar.app.google/PcAWDUwbfphUFF299", "_blank")}
         >
-          <button
+          <div
             className="flex items-center"
-            onClick={() => window.open("https://calendar.app.google/PcAWDUwbfphUFF299", "_blank")}
+
           >
             <img src={calendar} alt="calendar" className="w-[32px] h-[32px] mr-2" />
             <p className={`${styles.paragraph} text-white`}>
               <span className="text-white">BOOK</span> AN{' '}
               <span className="text-white">APPOINTMENT</span>
             </p>
-          </button>
-        </div>
+          </div>
+        </btn>
 
       </div>
 
