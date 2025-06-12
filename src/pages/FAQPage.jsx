@@ -15,7 +15,7 @@ const FaqPage = () => {
           </div>
     
           {/* Main Content */}
-          <div className={`${darkMode ? 'bg-primary' : 'bg-[#F5F8FF]' }bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${darkMode ? 'bg-primary' : 'bg-[#F5F8FF]' } ${styles.paddingX} ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               
               <Faq />

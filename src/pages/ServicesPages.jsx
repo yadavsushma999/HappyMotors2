@@ -1,6 +1,5 @@
-import React from 'react';
+
 import { Navbar, Footer, AllServices } from '../components';
-import styles from '../style';
 
 const ServicesPage = () => {
   return (

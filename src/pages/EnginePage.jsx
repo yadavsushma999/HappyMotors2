@@ -1,11 +1,13 @@
-// src/pages/ContactPage.jsx
-import React from 'react';
+
 import {EngineDiagnostics, Navbar, Footer} from '../components';
 import styles from '../style';
+import { useTheme } from '../components/ThemeContext'; 
+
 
 const EnginePage = () => {
+     const { darkMode } = useTheme(); 
     return (
-        <div className="bg-primary w-full overflow-hidden">
+        <div className={`${darkMode ? 'bg-primary' : 'bg-[#F5F8FF]'} w-full overflow-hidden`}>
           {/* Header and Navbar */}
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
@@ -14,7 +16,7 @@ const EnginePage = () => {
           </div>
     
           {/* Main Content */}
-          <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${styles.paddingX} ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               
               <EngineDiagnostics />

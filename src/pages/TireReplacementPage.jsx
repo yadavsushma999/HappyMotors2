@@ -1,11 +1,12 @@
-// src/pages/ContactPage.jsx
-import React from 'react';
+
 import {  TireReplacement, Navbar, Footer, } from '../components';
 import styles from '../style';
+import { useTheme } from '../components/ThemeContext';
 
 const TireReplacementPage = () => {
+  const { darkMode } = useTheme();
     return (
-        <div className="bg-primary w-full overflow-hidden">
+         <div className={`${darkMode ? 'bg-primary' : 'bg-[#F5F8FF]'} w-full overflow-hidden`}>
           {/* Header and Navbar */}
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
@@ -14,7 +15,7 @@ const TireReplacementPage = () => {
           </div>
     
           {/* Main Content */}
-          <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${darkMode ? 'bg-primary' : 'bg-[#F5F8FF]'} ${styles.paddingX} ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               
               <TireReplacement />
