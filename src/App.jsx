@@ -1,5 +1,5 @@
 
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from './components/ThemeContext';
 import ScrollToTop from './components/ScrollToTop'; // ⬅️ Import ScrollToTop
 import HomePage from './pages/HomePage';
