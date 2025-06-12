@@ -1,7 +1,6 @@
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from './components/ThemeContext';
-import ScrollToTop from './components/ScrollToTop'; // ⬅️ Import ScrollToTop
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import ServicesPage from './pages/ServicesPages';
@@ -16,12 +15,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
+  // Comment or adjust this if not deploying to GitHub Pages
   const isProduction = process.env.NODE_ENV === 'production';
 
   return (
     <ThemeProvider>
-      <Router basename={isProduction ? "/HappyMotors2" : "/HappyMotors2"}>
-        <ScrollToTop /> {/* ⬅️ Add this line */}
+      <Router basename={isProduction ? "/HappyMotors2" : ""}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
