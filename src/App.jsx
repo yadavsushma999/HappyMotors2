@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <ThemeProvider>
-      <Router basename={isProduction ? "/HappyMotors2" : ""}>
+      <Router >
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
